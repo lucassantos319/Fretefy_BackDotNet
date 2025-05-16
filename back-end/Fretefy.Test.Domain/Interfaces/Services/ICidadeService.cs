@@ -10,5 +10,6 @@ namespace Fretefy.Test.Domain.Interfaces
         IEnumerable<Cidade> List();
         IEnumerable<Cidade> ListByUf(string uf);
         IEnumerable<Cidade> Query(string terms);
+        ResultResponse<Cidade> ValidateCities(IEnumerable<Cidade> cidade);
     }
 }

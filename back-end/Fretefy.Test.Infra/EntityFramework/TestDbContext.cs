@@ -18,12 +18,13 @@ namespace Fretefy.Test.Infra.EntityFramework
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new CidadeMap());
+            modelBuilder.ApplyConfiguration(new RegiaoMap());
+            modelBuilder.ApplyConfiguration(new RegiaoCidadeMap());
         }
     }
 }
